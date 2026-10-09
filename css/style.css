@@ -1,0 +1,33 @@
+/* Starter styles only. Scrapbook layers and folder graphics come later. */
+:root {
+  --chocolate: #3e2822;
+  --pastel-blue: #b9d9eb;
+  --pastel-pink: #efb9cb;
+  --cream: #fff3df;
+}
+
+/* Add custom @font-face declarations after placing web fonts in assets/fonts. */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--chocolate);
+  color: var(--cream);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+header, main {
+  width: min(100% - 2rem, 64rem);
+  margin-inline: auto;
+}
+header { padding-block: 1.5rem; }
+main { padding-block: 2rem; }
+nav { display: flex; flex-wrap: wrap; gap: 1rem; }
+a { color: var(--pastel-blue); }
+a:hover, a[aria-current="page"] { color: var(--pastel-pink); }
+:focus-visible { outline: 3px solid var(--pastel-pink); outline-offset: 4px; }
+h1, h2 { line-height: 1.2; }
+section { margin-block: 2.5rem; scroll-margin-top: 1rem; }
+img { max-width: 100%; height: auto; }
+iframe { max-width: 100%; }
+.skip-link { position: absolute; top: -100px; left: 1rem; }
+.skip-link:focus { top: 1rem; background: var(--chocolate); padding: .5rem; }

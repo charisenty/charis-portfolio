@@ -1,0 +1,20 @@
+/* Wobbly Yellow Pencil — https://www.cursors-4u.com/cursor/wobbly-yellow-pencil */
+@media (hover: hover) and (pointer: fine) {
+  * {
+    cursor: url('https://cdn.cursors-4u.net/previews/8767a-3a77ca09-cursor_2-preview-32.webp') 0 0, auto !important;
+  }
+}
+/* End www.Cursors-4U.com Code */
+
+/* Shared portfolio scrollbar: Charis pastel blue. */
+:root { --portfolio-scrollbar-blue: #d1ddff; }
+* { scrollbar-color: var(--portfolio-scrollbar-blue) transparent; scrollbar-width: auto; }
+::-webkit-scrollbar { width: 12px; height: 12px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background-color: var(--portfolio-scrollbar-blue);
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-corner { background: transparent; }
